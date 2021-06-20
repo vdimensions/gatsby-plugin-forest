@@ -1,8 +1,8 @@
 {
   "name": "@vdimensions/gatsby-plugin-forest",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A gatsby plugin allowing forest templates to be rendered as gatsby pages",
-  "main": "src/gatsby-node.js",
+  "main": "gatsby-node.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
