@@ -1,0 +1,17 @@
+{
+  "name": "gatsby-plugin-forest",
+  "version": "0.0.1",
+  "description": "A gatsby plugin allowing forest templates to be rendered as gatsby pages",
+  "main": "src/gatsby-node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Virtual Dimensions",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@vdimensions/forest-js-react": "^1.2.10"
+  },
+  "devDependencies": {
+    "react": "^17.0.1"
+  }
+}
