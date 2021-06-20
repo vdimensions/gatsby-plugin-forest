@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-plugin-forest",
+  "name": "@vdimensions/gatsby-plugin-forest",
   "version": "0.0.1",
   "description": "A gatsby plugin allowing forest templates to be rendered as gatsby pages",
   "main": "src/gatsby-node.js",
