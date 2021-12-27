@@ -9,7 +9,7 @@
   "author": "Virtual Dimensions",
   "license": "Apache-2.0",
   "dependencies": {
-    "@vdimensions/forest-js-react": "^1.2.10"
+    "@vdimensions/forest-js-react": "^1.2.12"
   },
   "devDependencies": {
     "react": "^17.0.1"

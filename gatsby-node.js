@@ -25,7 +25,7 @@ exports.sourceNodes = async ({ actions, createContentDigest }) => {
     };
 
     var templateFiles = fs.readdirSync(options.location)
-        .filter(file => path.extname(file).toLowerCase() == ".json")
+        .filter(file => path.extname(file).toLowerCase() === ".json")
         .map(
             x => ({ 
                 template: x.substr(0, x.length - path.extname(x).length), 
