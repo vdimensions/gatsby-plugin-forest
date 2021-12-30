@@ -6,14 +6,13 @@ import "/src/forest/views";
 
 
 const ForestPage = (props) => {
-    const {data} = props.pageContext;
-    console.debug("ForestPage", data);
+    const {template, data} = props.pageContext;
     
     const GatsbyNavigator : React.FC<any> = (props) => {
         const navigate = useNavigate();
         React.useEffect(() => {
-            console.debug("GatsbyNavigator navigating to ", data.path);
-            navigate(data.path);
+            console.debug("GatsbyNavigator navigating to ", template);
+            navigate(template);
         });
         
         return (<>{props.children}</>);
