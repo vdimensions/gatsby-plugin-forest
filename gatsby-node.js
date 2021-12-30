@@ -71,6 +71,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 }
             }
         }`);
+        
     data.allForestNode.edges.forEach(({ node }) => {
         var template = node.id.substr(node.internal.type.length + 1);
         var componentPath = path.resolve(`${__dirname}/forest-wrapper.tsx`);
