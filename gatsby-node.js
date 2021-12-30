@@ -74,7 +74,7 @@ exports.createPages = async ({ graphql, actions }) => {
         
     data.allForestNode.edges.forEach(({ node }) => {
         var template = node.id.substr(node.internal.type.length + 1);
-        var componentPath = path.resolve(`${__dirname}/forest-wrapper.tsx`);
+        var componentPath = path.resolve(`${__dirname}/forest-page.tsx`);
         var templatePath = `/${template}`;
         console.log(`createPages::component path: ${componentPath}`);
         console.log(`createPages::template path: ${templatePath}`);

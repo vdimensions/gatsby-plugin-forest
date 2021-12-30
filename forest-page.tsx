@@ -1,16 +1,21 @@
 const React = require("react");
 import { ForestApp, useNavigate } from '@vdimensions/forest-js-react';
-import { ForestStore } from '@vdimensions/forest-js-react/dist/store';
 import { ForestGatsbyClient } from "./client";
 import "/src/forest/views";
 
 
 
-const ForestWrapper = (props) => {
+const ForestPage = (props) => {
     const {data} = props.pageContext;
-    const GatsbyNavigator : React.FC<{store: ForestStore}> = (props) => {
+    console.debug("ForestPage", data);
+    
+    const GatsbyNavigator : React.FC<any> = (props) => {
         const navigate = useNavigate();
-        navigate(data.path);
+        React.useEffect(() => {
+            console.debug("GatsbyNavigator navigating to ", data.path);
+            navigate(data.path);
+        });
+        
         return (<>{props.children}</>);
     }
     return (
@@ -22,4 +27,4 @@ const ForestWrapper = (props) => {
     );
 };
 
-export default ForestWrapper;
+export default ForestPage;
