@@ -8,6 +8,7 @@ type GatsbyNavigatorProps = {
 }
 
 const GatsbyNavigatorInner : React.FC<GatsbyNavigatorProps> = (props) => {
+    console.debug("GatsbyNavigatorInner");
     const navigate = useNavigate();
     React.useEffect(() => {
         console.debug("GatsbyNavigator navigating to ", props.template);
@@ -20,13 +21,17 @@ const GatsbyNavigatorInner : React.FC<GatsbyNavigatorProps> = (props) => {
 const ForestPage = (props) => {
     const {template, data} = props.pageContext;
     
-    const GatsbyNavigator : React.FC<any> = () => {
+    const GatsbyNavigator : React.FC<any> = React.memo(() => {
+
+        console.debug("GatsbyNavigator");
         return (
             <ForestHooksContext.Provider value={DefaultForestHooks}>
                 <GatsbyNavigatorInner template={template} />
             </ForestHooksContext.Provider>
         );
-    }
+    });
+
+    console.debug("ForestPage");
     
     return (
         <ForestApp 
