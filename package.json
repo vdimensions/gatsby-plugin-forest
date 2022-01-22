@@ -1,24 +1,30 @@
 {
   "name": "@vdimensions/gatsby-plugin-forest",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A gatsby plugin allowing forest templates to be rendered as gatsby pages",
+  "author": "Virtual Dimensions",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/vdimensions/frameworks/forest/gatsby-plugin-forest.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/vdimensions/frameworks/forest/gatsby-plugin-forest/issues"
+  },
+  "keywords": [
+    "forest",
+    "forest-js-react",
+    "gatsby",
+    "gatsby-plugin-forest"
+  ],
   "main": "gatsby-node.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Virtual Dimensions",
-  "license": "Apache-2.0",
   "dependencies": {
-    "@vdimensions/forest-js-react": "^1.2.24"
+    "@vdimensions/forest-js-react": "^1.2.28"
   },
   "devDependencies": {
     "react": "^17.0.1"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vdimensions/gatsby-plugin-forest.git"
   }
 }
